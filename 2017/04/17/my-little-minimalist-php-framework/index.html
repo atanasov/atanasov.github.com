@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Let’s start with the fact that I’m not big fan of WordPress. At work I had to do many modifications on different WordPress projects. Trying different plugins, modifying themes to get closer to the fea">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My little skeleton for smal php projects">
+<meta property="og:url" content="http://atanas.me/2017/04/17/my-little-minimalist-php-framework/index.html">
+<meta property="og:site_name" content="Atanas Atanasov&#39;s Blog">
+<meta property="og:description" content="Let’s start with the fact that I’m not big fan of WordPress. At work I had to do many modifications on different WordPress projects. Trying different plugins, modifying themes to get closer to the fea">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-10-25T20:11:32.456Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="My little skeleton for smal php projects">
+<meta name="twitter:description" content="Let’s start with the fact that I’m not big fan of WordPress. At work I had to do many modifications on different WordPress projects. Trying different plugins, modifying themes to get closer to the fea">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>My little skeleton for smal php projects</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2017/07/23/useful-php-resources-references-good-practices/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/01/11/my-mac-setup-for-php-development-el-capitan-2016/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&text=My little skeleton for smal php projects"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&is_video=false&description=My little skeleton for smal php projects"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=My little skeleton for smal php projects&body=Check out this article: http://atanas.me/2017/04/17/my-little-minimalist-php-framework/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&name=My little skeleton for smal php projects&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        My little skeleton for smal php projects
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Atanas Atanasov's Blog</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-04-17T17:38:06.000Z" itemprop="datePublished">2017-04-17</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Let’s start with the fact that I’m not big fan of WordPress. At work I had to do many modifications on different WordPress projects. Trying different plugins, modifying themes to get closer to the features desired by the clients. Often customers change their minds and want totaly different functionality which were not foreseen. That means adding new plugins, changing plugins code, mixing 2 plugins into one. I don’t like the database structure and the whole components of WordPress. I tryied to like it but didn’t succeed. I researched a lot of PHP frameworks/CMS. I wanted something simple, easy to extend, lightweight. For Laravel I found AsgardCMS, which is really good and stable. It has modules approach so it can be extended easily. Every module has its own routes, models, controllers, repository, presenter and etc. I liked the idea, I tried using AsgardCMS for 1-2 projects. It was good in the beginning, but it was too heavy CMS because it’s based on Laravel. For small web apps hosted on shared hosting can be bad idea using Laravel. I am using Laravel, but it is sometimes tooo Fat for simple 3-4 page websites. The email sending was the only Laravel feature I could use and basic templating with Blade. The Idea So I decided to create simple skeleton for these small sites. I started it last year made few sites with it. It is still not ready to share it. Main features Lightweight, Simple, Module based, Easy Administration, Easy module creation Just add template, decide which content will be dynamic add is as variables in INI files, and set config settings. The Admin panel will create editable form, textbox, radio, checkboxes, select box, textarea automatically. Structure Many flat frameworks use, yaml for data structure. They add in single YAML file the content and the configuration of the page. Simple INI files are used to store the data, it’s not the perfect choice and there are many limitations. I cannot store complex arrays of content in INI file. But INI is simple, readable, no dependancy built-in in php parser and represents simple storage key-&gt;value mechanism. If the data structure is too compex the project is for more complex framework. Every page has its own INI data file. It can be used in admin to CRUD the data and in frontend to show the data. If I write the correct INI file admin panel will be automatically generated. Later I found some complex structures which could not fix in single page INI file. Also several dynamic data content were used on several pages. To solve this I added modules folder. Where many modules can be created with different structure and data and they can be used in any pages. They just have to be included in config INI file for the page. It’s like collection of objects or array with special behaviour like gallery, testimonials, feedbacks, books. The admin panel for modules is also autogenerated. There is no blog at this moment, but it can be created as module - all data for posts will be in single INI file or several. I use Flat file storage because of the portability of the whole project. Flat storage is not very reliable and at some level can be slow, but for small traffic websites its okay. I was thinking to use JSON or even SQLite and MySQL. But I will add PDO If I need it for example for blog and have good searching. For now the main purpose of this framework is creating simpe websites - most static content, rarely edited, easy for coding, easy for deploying and easy for maintaining. I will share it publicly when I finish it.</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&text=My little skeleton for smal php projects"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&is_video=false&description=My little skeleton for smal php projects"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=My little skeleton for smal php projects&body=Check out this article: http://atanas.me/2017/04/17/my-little-minimalist-php-framework/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&title=My little skeleton for smal php projects"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://atanas.me/2017/04/17/my-little-minimalist-php-framework/&name=My little skeleton for smal php projects&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Atanas Atanasov
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
